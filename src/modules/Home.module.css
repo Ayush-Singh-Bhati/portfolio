@@ -1,6 +1,10 @@
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .main{
+    width: 97vw;
     height: 100vh;
     /* background-color: rgb(218, 215, 205); */
     background-color: rgb(233, 237, 201);
@@ -11,19 +15,24 @@
     gap: 2em;
     padding: 5% 0 2% 0;
 }
+@media screen and (max-width : 1100px) {
+    .main{
+        width: 96vw;
+    }
+}
 
 
 
 
 
 .mainprofile{
-    width: 100%;
+    width: 100vw;
     height: 70%;
     text-align: center;
     position: relative;
 }
 .b_name{
-    width: 100%;
+    width: 100vw;
     position: absolute;
     top: 0;
     left: 50%;
@@ -63,6 +72,10 @@
     width: 2px;
     height: 40px;
 }
+.logos{
+    display: flex;
+    gap: 20px;
+}
 svg{
     transition: all ease-in-out 0.5s;
     height: 4em;
@@ -87,13 +100,16 @@ svg{
 }
 
 @media screen and (max-width:850px){
+    .main{
+        width: 94vw;
+    }
     .profile{
         height: 80%;
         margin-top: 30px;
     }
     .b_name{
         font-size: 3.5em;
-        font-weight: 800;
+        font-weight: 700;
     }
     .b_name:hover{
        font-size: 4.5em;
@@ -116,23 +132,53 @@ svg{
     }
 }
 
+@media screen and (max-width : 560px) {
+    .main{
+        width: 93vw;
+    }
+}
 
 
 @media screen and (max-width:450px){
+    .main{
+        width: 92%;
+    }
      .profile{
-        height: 80%;
-        margin-top: 40px;
+        height: 60%;
+        margin-top: 7rem;
     }
     .b_name{
-        font-size: 3em;
-        font-weight: 800;
+        font-size: 2.3em;
+        font-weight: 900;
+        top: 10%;
     }
     .b_name:hover{
-       font-size: 3.8em;
+       font-size: 3em;
      }
-     .right{
-        width: 70%;
+     .tools{
+       flex-direction: column;
     }
+    .stack{
+        font-size: 16px;
+        margin-right: 0px;
+    }
+    .sline{
+        display: none;
+    }
+}
+@media screen and (max-width:340px) {
+    .profile{
+        height: 50%;
+        margin-top:10rem;
+    }
+    .b_name{
+        font-size: 2em;
+        font-weight: 900;
+        top: 12%;
+    }
+    .b_name:hover{
+        font-size: 2.5em;
+      }
 }
 
 
@@ -206,4 +252,5 @@ svg{
     .about{
         font-size:  18px;
     }
+   
 }
