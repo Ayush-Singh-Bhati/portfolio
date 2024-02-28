@@ -166,13 +166,16 @@ svg{
         display: none;
     }
 }
-@media screen and (max-width:340px) {
+@media screen and (max-width:400px) {
+    .main{
+        width: 100vw;
+    }
     .profile{
-        height: 50%;
+        height: 40%;
         margin-top:10rem;
     }
     .b_name{
-        font-size: 2em;
+        font-size: 1.8em;
         font-weight: 900;
         top: 12%;
     }
