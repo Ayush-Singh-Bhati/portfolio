@@ -169,14 +169,16 @@ svg{
 @media screen and (max-width:400px) {
     .main{
         width: 100vw;
+        height: 95vh;
+        gap: 0;
     }
     .profile{
         height: 40%;
         margin-top:10rem;
     }
     .b_name{
-        font-size: 1.8em;
-        font-weight: 900;
+        font-size: 2em;
+        font-weight: normal;
         top: 12%;
     }
     .b_name:hover{
