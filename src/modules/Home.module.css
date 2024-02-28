@@ -1,0 +1,209 @@
+
+
+.main{
+    height: 100vh;
+    /* background-color: rgb(218, 215, 205); */
+    background-color: rgb(233, 237, 201);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 5% 0 2% 0;
+}
+
+
+
+
+
+.mainprofile{
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    position: relative;
+}
+.b_name{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 5em;
+    font-weight: 900;
+    -webkit-text-stroke: 4px black;
+    color: transparent;
+    transition: all ease-in-out 0.8s;
+}
+.b_name:hover{
+   z-index: 5;
+  font-size: 6em;
+   color: rgb(212, 163, 115);
+   cursor: pointer;
+}
+.profile{
+    height:100%;
+    border-bottom: 2px solid black;
+    filter: brightness(120%);
+    filter: drop-shadow(10px 10px 40px rgb(56, 56, 56));
+}
+
+
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.stack{
+    font-size: 25px;
+    margin-right: 50px;
+}
+.sline{
+    background-color: black;
+    width: 2px;
+    height: 40px;
+}
+svg{
+    transition: all ease-in-out 0.5s;
+    height: 4em;
+}
+
+.tools svg:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:1200px){
+    .profile{
+        height: 90%;
+    }
+    .b_name{
+        font-size: 4em;
+        font-weight: 800;
+    }
+    .b_name:hover{
+       font-size: 5em;
+     }
+}
+
+@media screen and (max-width:850px){
+    .profile{
+        height: 80%;
+        margin-top: 30px;
+    }
+    .b_name{
+        font-size: 3.5em;
+        font-weight: 800;
+    }
+    .b_name:hover{
+       font-size: 4.5em;
+     }
+     .right{
+        width: 70%;
+    }
+    .stack{
+        font-size: 20px;
+        margin-right: 30px;
+    }
+    .sline{
+        background-color: black;
+        width: 2px;
+        height: 30px;
+    }
+    svg{
+        transition: all ease-in-out 0.5s;
+        height: 2em;
+    }
+}
+
+
+
+@media screen and (max-width:450px){
+     .profile{
+        height: 80%;
+        margin-top: 40px;
+    }
+    .b_name{
+        font-size: 3em;
+        font-weight: 800;
+    }
+    .b_name:hover{
+       font-size: 3.8em;
+     }
+     .right{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+/* About section */
+
+.aboutContainer{
+    background-color: rgb(204, 213, 174);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+.left{
+    width: 50%;
+}
+.left svg{
+    height: 12em;
+}
+.right{
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    color: black;
+}
+.name{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width : 750px) {
+    .aboutContainer{
+        background-color: rgb(204, 213, 174);
+        height: 100vh;
+        display: block;
+      text-align: center;
+        padding: 10%;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+    .left{
+        width: 100%;
+        margin: 15px 0;
+    }
+    .left svg{
+        height: 12em;
+    }
+    .right{
+        margin: 40px auto;
+        text-align: center;
+        width: 80%;
+        color: black;
+    }
+    .name{
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width : 410px) {
+    .name{
+        font-size: 20px;
+    }
+    .about{
+        font-size:  18px;
+    }
+}

@@ -1,0 +1,150 @@
+.projectContainer {
+    background-color: rgb(254, 250, 224);
+   color: black;
+   
+}
+.projectContainer h2{
+    font-size: 45px;
+    padding-top: 20px;
+    text-align: center;
+}
+.project{
+    background-color: rgb(254, 250, 224);
+    color: white;
+    height: 80vh;
+    width: 100%;
+    /* margin-bottom: 1%; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
+    padding: 0 10%;
+}
+
+.projectImg{
+  height: 100%;
+  width: 50%;
+ box-sizing: border-box;
+  overflow: hidden;
+ filter: drop-shadow(2px 2px 5px black);
+ display: flex;
+ align-items: center;
+
+}
+.imgRow{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.projectImg1{
+    height:  45%;
+}
+@media screen and (max-width:1090px){
+    .projectImg1{
+        height:  40%;
+    }
+}
+
+
+.projectDetail{
+    background-color: rgb(204, 213, 174);
+    height: 80%;
+    width: 50%;
+    padding: 5%;
+    border-radius: 16px;
+    box-shadow: 1px 1px 10px black;
+}
+.projectTitle{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+.projectDesc{
+    font-size: 22px;
+    color: black;
+}
+.projectLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projectLink a{
+    text-decoration: none; 
+}
+.projectLink svg{
+    height: 2em;
+}
+.projectLink a span{
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+@media screen and  (max-width: 900px) {
+    .project{
+        background-color: rgb(204, 213, 174);
+        padding: 5%;
+        border-radius: 16px;
+        box-shadow: 1px 1px 10px black;
+        color: white;
+        height: 90vh;
+        width: 90%;
+        flex-direction:  column;
+        text-align: center;
+        gap: 20px;
+        padding: 0;
+        margin: 5%;
+    }
+    
+    .projectImg{
+      width: 100% ;
+     box-sizing: border-box;
+     margin-top: 0;
+    }
+    .imgRow{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .projectImg1{
+        width:55%;
+        height: auto;
+    }
+    
+    .projectDetail{
+        background-color: rgb(204, 213, 174);
+        height: 50%;
+        width: 100%;
+        padding: 5%;
+       border: none;
+       border-radius: 0;
+       box-shadow: none;
+    }
+    
+}
+
+@media screen and (max-width : 410px) {
+    .project{
+        gap: 0;
+       
+    }
+    
+    .projectTitle{
+        font-size: 30px;
+    }
+    .projectDesc{
+        font-size: 20px;
+    }
+   
+    .projectLink svg{
+        height: 1.5em;
+    }
+    .projectLink a span{
+        font-size: 16px;
+    }
+}

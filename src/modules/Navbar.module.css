@@ -1,0 +1,100 @@
+.navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(204, 213, 174);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+
+.navTitle {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.navUL {
+    display: flex;
+    gap: 4vw;
+    margin-top: 10px;
+    color: black;
+}
+
+.navList {
+    list-style: none;
+    font-weight: 500;
+}
+
+.navList:hover {
+    color: rgb(212, 163, 115);
+    transform: scale(120%);
+    cursor: pointer;
+}
+.ham{
+    height: 2.5em;
+    display: none;
+    cursor: pointer;
+}
+.close{
+    height: 2.5em;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:800px){
+
+    .ham{
+        display: block;
+    }
+    .navUL{
+        display: none;
+    }
+    .close{
+        position: absolute;
+        top: 15px;
+        right: 35px;
+    }
+    .mobileNav{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        background-color: rgb(204, 213, 174);
+        color: black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .mobileNav ul{
+        list-style: none;
+    }
+    .mobileNav ul li {
+        margin: 15px 0;
+        cursor: pointer;
+    }
+    .mobileNav ul li:hover {
+        color: rgb(212, 163, 115);
+        transform: scale(120%);
+        cursor: pointer;
+    }
+   
+}
+
+/*  rgb(163, 177, 138) */

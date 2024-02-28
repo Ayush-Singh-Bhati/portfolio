@@ -1,0 +1,88 @@
+
+.body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    background-color: rgb(212, 163, 115);
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4em;
+    height: 40vh;
+}
+.greeting{
+    width: 30%;
+    text-align: center;
+}
+.greeting h1{
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+.mail svg, .github svg, .insta svg, .linkden svg{
+    height: 2em;
+}
+.mail :hover{
+    filter: drop-shadow( 0.5px 0.5px 8px rgb(254, 250, 224));
+}
+.github :hover{
+    filter: drop-shadow( 0.5px 0.5px 8px   rgb(254, 250, 224));
+}
+.insta :hover{
+    filter: drop-shadow( 0.5px 0.5px 8px   rgb(254, 250, 224));
+}
+.linkden :hover{
+    filter: drop-shadow( 0.5px 0.5px 8px  rgb(254, 250, 224));
+}
+
+.copyright{
+    background-color: rgb(126, 31, 31);
+    color: white;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+       flex-direction: column;
+       align-items: center;
+    }
+    .greeting {
+       width: 100%;
+       text-align: center;
+    }
+    .contact {
+       gap: 10%;
+    }
+   }
+
+   @media screen and (max-width : 410px) {
+    .greeting h1{
+        font-size: 1.5em;
+    }
+    .contact{
+        gap: 25%;
+    }
+    .mail svg, .github svg, .insta svg, .linkden svg{
+        height: 1.3em;
+    }
+    .copyright{
+        height: 2rem;
+    }
+    .copyright h5{
+       font-size: 14px;
+    }
+   }
