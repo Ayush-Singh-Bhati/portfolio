@@ -30,6 +30,9 @@
     height: 70%;
     text-align: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .b_name{
     width: 100vw;
@@ -42,6 +45,9 @@
     -webkit-text-stroke: 4px black;
     color: transparent;
     transition: all ease-in-out 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .b_name:hover{
    z-index: 5;
@@ -141,15 +147,15 @@ svg{
 
 @media screen and (max-width:450px){
     .main{
-        width: 92%;
+        width: 95%;
     }
      .profile{
         height: 60%;
         margin-top: 7rem;
     }
     .b_name{
-        font-size: 2.3em;
-        font-weight: 900;
+        font-size: 2.1em;
+        font-weight: normal;
         top: 10%;
     }
     .b_name:hover{
@@ -168,21 +174,21 @@ svg{
 }
 @media screen and (max-width:400px) {
     .main{
-        width: 100vw;
         height: 95vh;
         gap: 0;
     }
     .profile{
-        height: 40%;
-        margin-top:10rem;
+        height: 50%;
+        margin-top:7rem;
+        justify-content:center;
+        align-items: center;
     }
     .b_name{
         font-size: 2em;
-        font-weight: normal;
-        top: 12%;
+        top: 16%;
     }
     .b_name:hover{
-        font-size: 2.5em;
+        font-size: 2.4em;
       }
 }
 
